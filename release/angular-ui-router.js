@@ -4238,7 +4238,7 @@ function $StateRefDirective($state, $timeout) {
       var def    = { state: ref.state, href: null, params: null };
       var type   = getTypeInfo(element);
       var active = uiSrefActive[1] || uiSrefActive[0];
-                 'xlink:href' : 'href';
+                 
       var newHref = null, isAnchor = element.prop("tagName").toUpperCase() === "A";
 
       def.options = extend(defaultOpts(element, $state), attrs.uiSrefOpts ? scope.$eval(attrs.uiSrefOpts) : {});
